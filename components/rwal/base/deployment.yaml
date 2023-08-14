@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: rwal
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-hjad-tenant/byoc-app-wjqe/rwal@sha256:df5b78cb557dc60dfb0f3d88fd118d32a7e9e82bcd6e0e4dbd974d741eaae170
         name: my-java-quarkus
         ports:
         - containerPort: 8081
