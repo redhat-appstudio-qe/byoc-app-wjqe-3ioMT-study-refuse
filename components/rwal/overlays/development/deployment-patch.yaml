@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rwal
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-hjad-tenant/byoc-app-wjqe/rwal@sha256:df5b78cb557dc60dfb0f3d88fd118d32a7e9e82bcd6e0e4dbd974d741eaae170
+        name: my-java-quarkus
+        resources: {}
+status: {}
